@@ -1,0 +1,20 @@
+:root{
+  --bg: #ECEFF3;
+  --surface: #FFFFFF;
+  --surface-2: #F8FAFC;
+
+  --silver: #D9DEE5;
+  --steel: #A8B0BA;
+  --graphite: #5B6472;
+  --charcoal: #313843;
+
+  --text: #1F2937;
+  --text-light: #6B7280;
+
+  --border: rgba(255,255,255,.45);
+  background: rgba(255,255,255,.55);
+backdrop-filter: blur(16px);
+-webkit-backdrop-filter: blur(16px);
+
+border: 1px solid rgba(255,255,255,.35);
+}
