@@ -1,5 +1,6 @@
 import { supabase } from "../../lb/supabase";
 
+//funcao registrar acessos
 export async function registrarAcesso(pagina) {
   try {
     await supabase.from("acessos").insert({
@@ -10,6 +11,7 @@ export async function registrarAcesso(pagina) {
     console.error("Erro ao registrar acesso:", error);
   }
 }
+// funcao buscar acessosMes
 export async function buscarAcessosMes() {
 
   const inicioMes = new Date();
@@ -20,8 +22,9 @@ export async function buscarAcessosMes() {
   const { count, error } = await supabase
     .from("acessos")
     .select("*", { count: "exact", head: true })
-    .gte("criado_em", inicioMes.toISOString());
-
+    .eq("pagina", "calculadora")
+    .gte("created_at", inicioMes.toISOString());
+    
   if(error){
     console.error(error);
     return 0;

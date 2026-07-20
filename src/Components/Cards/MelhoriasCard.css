@@ -1,0 +1,38 @@
+.melhoriaFormulario {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+.melhoriaFormulario input {
+    flex: 1;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+
+.melhoriaFormulario input:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+
+.melhoriaFormulario button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #3f5688;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+.melhoriaFormulario button:hover {
+    opacity: 0.85;
+}

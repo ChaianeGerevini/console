@@ -1,33 +1,23 @@
 .chamadoCard{
 
     background:white;
-
     border-radius:18px;
-
     padding:22px;
-
     margin-bottom:20px;
-
     border:1px solid #E5E7EB;
-
     box-shadow:0 10px 25px rgba(0,0,0,.06);
 }
 
 .topo{
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
     margin-bottom:15px;
 }
 
 .topo span{
 
     background:#E5E7EB;
-
     padding:5px 12px;
 
     border-radius:30px;

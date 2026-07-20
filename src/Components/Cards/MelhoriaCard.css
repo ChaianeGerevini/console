@@ -1,0 +1,55 @@
+
+.melhoriaCard {
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background: rgb(231, 228, 228);
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+
+.melhoriaCard:hover {
+    transform: scale(1.02);
+}
+
+
+.checkBox {
+
+    width: 20px;
+
+    height: 22px;
+
+    border: 2px solid #555;
+
+    border-radius: 5px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.concluido {
+
+    background: #b7f7c2;
+
+    border-color: green;
+
+}
+
+
+.concluido .checkBox {
+
+    background: green;
+
+    color: white;
+
+}

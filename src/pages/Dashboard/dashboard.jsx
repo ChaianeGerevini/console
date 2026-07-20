@@ -25,7 +25,8 @@ useEffect(() => {
   }, []);
 
   return (
-  <div className="container"> <h1>Dashboard</h1> <DashboardCards suporte={[]} /> </div> 
+  <div className="container"> 
+  <h1>Dashboard</h1> <DashboardCards suporte={[]}   acessosMes={acessosMes} /> </div> 
 );
 }
 
