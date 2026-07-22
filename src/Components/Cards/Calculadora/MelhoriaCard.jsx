@@ -1,6 +1,5 @@
-import { atualizarStatus } from "../../Services/MelhoriasServices";
-import "../../Components/Cards/MelhoriaCard.css";
-
+import { atualizarStatus } from "../../../Services/MelhoriasServices";
+import "../../Cards/Calculadora/MelhoriasCard.css";
 
 function MelhoriaCard({ item, atualizar }) {
 

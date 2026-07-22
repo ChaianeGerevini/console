@@ -1,12 +1,12 @@
 //importamos bibliotecas e arquivos q vamos ultilizar 
 import { useEffect, useState } from "react";
 import { buscarSuporte } from "../../Services/Calculadora/calculadoraExcelService";
-import ChamadoCard from "../../Components/Cards/ChamadoCard";
-import DashboardCards from "../../Components/Cards/DashboardCards";
+import ChamadoCard from "../../Components/Cards/Calculadora/ChamadoCard";
+import DashboardCards from "../../Components/Cards/Calculadora/DashboardCards";
 import { buscarAcessosMes } from "../../Services/Calculadora/logsService";
-import MelhoriasCards from "../../Components/Cards/MelhoriasCard";
+import MelhoriasCards from "../../Components/Cards/Calculadora/MelhoriasCard";
 import { buscarMelhorias } from "../../Services/MelhoriasServices";
-import MelhoriaCard from "../../Components/Cards/MelhoriaCard";
+import MelhoriaCard from "../../Components/Cards/Calculadora/MelhoriaCard";
 
 //criamos a funcao da pagina
 function CalculadoraExcel () {
@@ -64,6 +64,7 @@ useEffect(()=>{
       acessosMes={acessosMes} />
 
   <h2>Chamados em Aberto</h2>
+
       {suporte
       .filter((chamado) => chamado.status === "Aberto")
       .map((chamado) => (
@@ -74,11 +75,14 @@ useEffect(()=>{
       ))}
 
     <h3>Melhorias</h3>
+
     <MelhoriasCards
   atualizar={carregarMelhorias}
 />
 
-{melhorias.map((item)=>(
+{melhorias
+.filter((melhorias)=> melhorias.status === "Pendente" )
+.map((item) => (
   <MelhoriaCard
     key={item.id}
     item={item}

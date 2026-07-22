@@ -1,10 +1,17 @@
-import "../../Components/Cards/DashboardCards.css"
+import "../../Cards/Calculadora/DashboardCards.css"
 
 //criada funcao dash com os parametros das funcoes criadas em logService e calculadoraExcelService
-function DashboardCards({suporte, acessosMes})
-{
-    const totalChamados = suporte.length; //variavel = quantidade da funcao q busca
-    const totalAcessos = acessosMes.length;
+function DashboardCards({
+  suporte = [],
+  acessosMes = [],
+  buscarAcessosMesSalao = []
+}) {
+  const totalChamados = suporte.length;
+  const totalAcessos = acessosMes.length;
+  const totalAcessosSalao = buscarAcessosMesSalao;
+ //variavel = quantidade da funcao q busca
+    
+
 
     
     const totalEmpresas = new Set (
@@ -25,11 +32,6 @@ function DashboardCards({suporte, acessosMes})
       </div>
 
       <div className="dashboardCard">
-        <span>Empresas</span>
-        <h2>{totalEmpresas}</h2>
-      </div>
-
-      <div className="dashboardCard">
         <span>Em Aberto</span>
         <h2>{totalAbertos}</h2>
       </div>
@@ -38,11 +40,13 @@ function DashboardCards({suporte, acessosMes})
       <span>Acessos da Calculadora</span>
      <h2>{acessosMes}</h2>
     </div>
+
     </div>
     //Cards criados com className para o css
     //h2 {nome da propriedade ou variavel}
     );
 }
+
 
 
 export default DashboardCards

@@ -1,6 +1,8 @@
 import { useState } from "react";
-import { criarMelhoria } from "../../Services/MelhoriasServices";
-import "../../Components/Cards/MelhoriasCard.css";
+import { criarMelhoria } from "../../../Services/MelhoriasServices";
+import "../../Cards/Calculadora/MelhoriaCard.css";
+
+
 function MelhoriasCards ({atualizar}) {
 
 const [descricao, setdescricao] = useState("")

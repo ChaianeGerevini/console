@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import DashboardCards from "../../Components/Cards/DashboardCards";
+import DashboardCards from "../../Components/Cards/Calculadora/DashboardCards";
 import { registrarAcesso, buscarAcessosMes } from "../../Services/Calculadora/logsService";
 
 function Dashboard() {
@@ -14,6 +14,7 @@ useEffect(() => {
 
   carregar();
 }, []);
+
 
   useEffect(() => {
 

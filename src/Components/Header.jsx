@@ -34,7 +34,7 @@ button: {
     display: "inline-block",
     position: "absolute",
     left: 15,
-    width: "50px",
+    width: "40px",
     height: "50px",
     borderRadius: "30px",
 }
