@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import ProtectedRoute from "./Components/ProtectedRoute";
 import Dashboard from "./pages/Dashboard/dashboard";
 import MainLayout from "./MainLayout/MainLayout";
 import Agendly from "./pages/Agendly/agendly";
@@ -7,18 +8,21 @@ import Salao from "./pages/Salao/salao";
 import LojaVinhos from "./pages/Loja-Vinhos/loja-vinhos";
 import LandingPages from "./pages/Landing-Pages/landing-pages";
 
+
 function App() {
   return (
          
       <Routes>
-      <Route 
-      path="/"
-      element={ 
-        <MainLayout>
-          <Dashboard />
-        </MainLayout>
-      }
-      />
+      <Route
+  path="/"
+  element={
+    <ProtectedRoute>
+      <MainLayout>
+        <Dashboard />
+      </MainLayout>
+    </ProtectedRoute>
+  }
+/>
       <Route 
       path="/Agendly"
       element={ 
