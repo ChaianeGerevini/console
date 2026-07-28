@@ -1,7 +1,7 @@
 
 import { useState } from "react";
-import Header from "../Components/header";
-import Sidebar from "../Components/sidebar";
+import Header from "../Components/Header";
+import Sidebar from "../Components/Sidebar";
 
 
 function MainLayout({ children }) {
