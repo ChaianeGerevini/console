@@ -78,10 +78,11 @@ useEffect(()=>{
 
     <MelhoriasCards
   atualizar={carregarMelhorias}
+  sistema="Calculadora"
 />
 
 {melhorias
-.filter((melhorias)=> melhorias.status === "Pendente" )
+.filter((melhorias)=> melhorias.sistema === "Calculadora" )
 .map((item) => (
   <MelhoriaCard
     key={item.id}

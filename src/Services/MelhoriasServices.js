@@ -16,12 +16,13 @@ export async function buscarMelhorias() {
 }
 
 
-export async function criarMelhoria(descricao) {
+export async function criarMelhoria(descricao, sistema) {
   const { error } = await supabase
     .from("melhorias")
     .insert([
       {
         descricao,
+        sistema,
         status: "Pendente"
       }
     ]);
