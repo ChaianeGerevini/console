@@ -4,9 +4,12 @@ import CardsAgendly from "../../Components/Cards/Agendly/cardsAgendly";
 import MelhoriasCards from "../../Components/Cards/Calculadora/MelhoriasCard";
 import { buscarMelhorias } from "../../Services/MelhoriasServices";
 import MelhoriaCard from "../../Components/Cards/Calculadora/MelhoriaCard";
+import { buscarChamados } from "../../Services/Agendly/SuporteService";
+import SuporteApp from "../../Components/Cards/Agendly/suporteApp";
 
 function Agendly() {
     const [melhorias,setMelhorias] = useState([]);
+      const [chamados, setChamados] = useState([]);
 
     const [dados, setDados] = useState({
         usuarios: 0,
@@ -18,6 +21,17 @@ function Agendly() {
         carregar();
         carregarMelhorias();
     }, []);
+
+      useEffect(() => {
+    carregarChamados();
+  }, []);
+
+  async function carregarChamados() {
+    const dados = await buscarChamados();
+      console.log("Chamados:", dados);
+    setChamados(dados);
+  }
+
 
     async function carregar() {
         const info = await buscarMetricasAgendly();
@@ -52,9 +66,23 @@ function Agendly() {
     item={item}
     atualizar={carregarMelhorias}
   />
+  
 ))}
-        </>
-    );
+<br></br>
+   <h3>Chamados:</h3> <br></br>
+
+   <div>
+      {chamados.map((chamado) => (
+        <SuporteApp
+          key={chamado.id}
+          chamado={chamado}
+        />
+      ))}
+    </div>
+
+ </>
+        
+ );
 }
 
 export default Agendly

@@ -34,9 +34,10 @@ button: {
     display: "inline-block",
     position: "absolute",
     left: 15,
-    width: "40px",
-    height: "50px",
-    borderRadius: "30px",
+    top: 32,
+    width: "45px",
+    height: "45px",
+    borderRadius: "20px",
 }
     
 };

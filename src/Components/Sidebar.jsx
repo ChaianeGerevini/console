@@ -1,4 +1,5 @@
 const isMobile = window.innerWidth <= 768;
+
 function Sidebar({aberta}) {
 
     return (
