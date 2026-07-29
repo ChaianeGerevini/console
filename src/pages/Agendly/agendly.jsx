@@ -16,6 +16,7 @@ function Agendly() {
 
     useEffect(() => {
         carregar();
+        carregarMelhorias();
     }, []);
 
     async function carregar() {
