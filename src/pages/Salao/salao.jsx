@@ -32,7 +32,6 @@ setAcessosSalao(dados);
   carregarAcessosSalao();
 }, []);
 
-   console.log(suporteSalao);
     return (
       
     //o return é o que aparece em tela, neste caso tem o titulo 
@@ -42,7 +41,7 @@ setAcessosSalao(dados);
       <h1>Salao Tainara</h1>
 
     <DashboardCardSalao
-    carregarSuporteSalao={suporteSalao}
+      buscarSuporteSalao={suporteSalao}
     buscarAcessosMesSalao={acessosSalao} />
 
 

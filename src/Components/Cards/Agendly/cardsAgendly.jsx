@@ -10,17 +10,17 @@ function CardsAgendly({
     <div className="dashboardCards">
 
       <div className="dashboardCard">
-        <span>Usuários</span>
+        <span>Usuários App Agendly</span>
         <h2>{usuarios}</h2>
       </div>
 
       <div className="dashboardCard">
-        <span>Premium</span>
+        <span>Premium App Agendly</span>
         <h2>{premium}</h2>
       </div>
 
       <div className="dashboardCard">
-        <span>Chamados</span>
+        <span>Chamados Agendly</span>
         <h2>{suporte}</h2>
       </div>
 

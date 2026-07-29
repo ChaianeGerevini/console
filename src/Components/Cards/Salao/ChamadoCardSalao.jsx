@@ -3,7 +3,7 @@ import "./ChamadoCardSalao.css";
 import { useState } from "react";
 
 function ChamadoCardSalao ({ chamado }) {
-      console.log("Renderizando:", chamado);
+
     const [statusChamado, setStatusChamado] = useState (chamado.status);
 
   async function mudarStatus(event) {
@@ -21,9 +21,7 @@ function ChamadoCardSalao ({ chamado }) {
         alert("Erro ao atualizar status");
         return;
     }
-    
-    console.log("status atualizado");
-    
+        
   }
 
     return (

@@ -12,7 +12,6 @@ function DashboardCards({
  //variavel = quantidade da funcao q busca
     
 
-
     
     const totalEmpresas = new Set (
         suporte.map((item) => item.empresa) 
@@ -25,23 +24,19 @@ function DashboardCards({
 
     return (
        <div className="dashboardCards">
+      
+      <div className="dashboardCard">
+      <span>Acessos do mês</span>
+     <h2>{acessosMes}</h2>
+    </div>
 
       <div className="dashboardCard"> 
         <span>Total de Chamados</span>
         <h2>{totalChamados}</h2>
       </div>
 
-      <div className="dashboardCard">
-        <span>Em Aberto</span>
-        <h2>{totalAbertos}</h2>
-      </div>
-      
-      <div className="dashboardCard">
-      <span>Acessos da Calculadora</span>
-     <h2>{acessosMes}</h2>
     </div>
-
-    </div>
+  
     //Cards criados com className para o css
     //h2 {nome da propriedade ou variavel}
     );

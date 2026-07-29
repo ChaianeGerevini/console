@@ -41,7 +41,8 @@ return (
 
 
   <span>
-    {item.descricao}
+    {item.descricao} { " - " }
+    {item.sistema}
   </span>
 
 
