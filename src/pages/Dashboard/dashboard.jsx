@@ -101,11 +101,11 @@ useEffect(() => {
     buscarAcessosMesSalao={acessosSalao} />
 
 
-   <h3>Melhorias</h3>
+   <h3>Melhorias - To do list </h3>
 
     <MelhoriasCards
   atualizar={carregarMelhorias}
-  sistema="Agendly"
+  sistema=" Geral "
 />
 
 {melhorias
