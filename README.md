@@ -1,16 +1,67 @@
-# React + Vite
+Console
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web desenvolvida com React como projeto de prática e aprendizado em desenvolvimento frontend.
 
-Currently, two official plugins are available:
+O projeto foi criado para colocar em prática conceitos de React, componentes, gerenciamento de estado, estilização e interação com o usuário.
+Neste projeto criei um console que permite acompanhar todos os meus projetos criados e publicados
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+No projeto temos:
+- Dashboard geral, páginas separadas por projeto
+- To-Do list de cada projeto e geral
+- Rastreio de acessos aos sites
+- Rastreio de downloads no app
+- Quantidade de chamados aberto e seu conteúdo
 
-## React Compiler
+🚀 Tecnologias
+React
+JavaScript
+HTML5
+CSS3
+Vite
+Supabase
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+📌 Funcionalidades
+Interface desenvolvida em React
+Componentização
+Rastreabilidade de sites publicados
+Gerenciamento de estado
+Layout responsivo
+To-Do List
 
-## Expanding the ESLint configuration
+🛠️ Instalação
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Clone o repositório:
+
+git clone URL_DO_REPOSITORIO
+
+Entre na pasta do projeto:
+
+cd console
+
+Instale as dependências:
+
+npm install
+
+Execute o projeto:
+
+npm run dev
+
+Depois, acesse a URL exibida pelo Vite no terminal.
+
+--Projeto publicado no vercel com login simples
+
+Telas do projeto:
+
+![Console](./public/Captura%20de%20Tela%202026-08-18%20às%2014.19.48.png)
+
+![Console](./public/Captura%20de%20Tela%202026-08-18%20às%2014.20.24.png)
+
+![Console](./public/Captura%20de%20Tela%202026-08-18%20às%2014.20.45.png)
+
+🎯 Objetivo
+
+Este projeto faz parte da minha prática em desenvolvimento frontend, com foco no aprendizado de React e na construção de aplicações utilizando componentes reutilizáveis e interfaces interativas.
+
+👩‍💻 Autora
+
+Chaiane Oliveira
